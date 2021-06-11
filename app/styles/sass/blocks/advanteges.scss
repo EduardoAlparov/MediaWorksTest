@@ -34,7 +34,7 @@
   // .advanteges__item
   &__item {
     height: 100%;
-    background-image: url('images/dist/time.png');
+    background-image: url('../images/dist/time.png');
     background-repeat: no-repeat;
     background-position: right center;
     background-size: auto;
@@ -42,13 +42,13 @@
     border-radius: 6px;
 
     &--speed{
-      background-image: url('images/dist/speed.png');
+      background-image: url('../images/dist/speed.png');
     }
     &--information{
-      background-image: url('/images/dist/information.png');
+      background-image: url('../images/dist/information.png');
     }
     &--chat{
-      background-image: url(/images/dist/chat.png);
+      background-image: url('../images/dist/chat.png');
     }
   }
 

@@ -1,6 +1,6 @@
 .registration-banner {
   height: 100%;
-  background-image: url('/images/src/car-manager.png');
+  background-image: url('../images/src/car-manager.png');
   background-repeat: no-repeat;
   background-position: right center;
   background-size: auto;
@@ -18,7 +18,7 @@
   }
 
   &--footer {
-    background-image: url('/images/src/cars.png');
+    background-image: url('../images/src/cars.png');
     @include desktop{
       background-size: 60%;
     }
