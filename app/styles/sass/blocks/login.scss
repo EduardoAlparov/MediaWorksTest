@@ -15,13 +15,13 @@
     &:hover{
       color: $button-color;
       &::before{
-        background: url('/images/src/login_icon-orange.svg');
+        background: url('../images/dist/login_icon-orange.svg');
       }
     }
     
     &::before {
       content: '';
-      background: url('/images/src/login_icon.svg');
+      background: url('../images/dist/login_icon.svg');
       width: 24px;
       height: 24px;
       position: absolute;
