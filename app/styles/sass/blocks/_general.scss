@@ -1,0 +1,159 @@
+// GENERAL PROJECT STYLES
+
+body,
+html {
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  font-family: 'Whitney', Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: $textcolor;
+
+  &.overflow {
+    overflow: hidden;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 1180px;
+
+  @include desktop {
+    max-width: 85%;
+  }
+  @include tablets{
+    max-width: 95%;
+  }
+  @include bigPhones {
+    max-width: 85%;
+  }
+}
+
+.title {
+  width: 100%;
+  color: $white-color;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: 0em;
+  
+  @include desktop {
+    font-size: 42px;
+    line-height: 43px;
+  }
+  @include tablets {
+    font-size: 40px;
+    line-height: 38px;
+  }
+  @include bigPhones {
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  &--footer {
+    font-family: Whitney;
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    @include desktop {
+      font-size: 34px;
+      line-height: 43px;
+    }
+    @include tablets {
+      font-size: 30px;
+      line-height: 38px;
+    }
+    @include bigPhones {
+      font-size: 26px;
+      line-height: 32px;
+    }
+  }
+}
+
+.text {
+  color: $white-color;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 350;
+  line-height: 31px;
+  letter-spacing: 0em;
+
+  @include tablets {
+      font-size: 22px;
+  }
+
+  @include bigPhones{
+      font-size: 20px;
+  }
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+button[type="button"] {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.page-wrapper{
+  width: 100%;
+  overflow: hidden;
+  min-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}

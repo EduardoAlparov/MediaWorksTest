@@ -1,0 +1,21 @@
+.menu {
+
+  // .menu__item
+
+  &__item {
+  }
+  // .menu__link
+
+  &__link {
+    display: block;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 325;
+    line-height: 23px;
+    color: $white-color;
+
+    &:hover {
+      color: $button-color;
+    }
+  }
+}

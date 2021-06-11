@@ -1,0 +1,62 @@
+.header-section {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(90deg, #2D1686 0%, #4E33B5 100%);
+
+  &__container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__header{
+    // margin-bottom: 60px;
+    flex: 1 0 0;
+  }
+
+  &__registration-banner{
+    flex: 3 0 auto;
+  }
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+
+		// .header__logo
+
+		// &__logo {
+
+		// }
+
+		// .header__menu
+
+		&__menu {
+      margin-left: auto;
+      margin-right: 135px;
+
+      @include desktop{
+        margin-right: 60px;
+      }
+
+      @include tablets {
+        margin-right: 60px;
+      }
+
+      @include bigPhones{
+        margin-right: 40px;
+      }
+
+      @include phones{
+        margin: 0;
+      }
+		}
+
+		// .header__login
+
+		// &__login {
+		// }
+}

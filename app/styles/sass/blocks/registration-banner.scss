@@ -1,0 +1,155 @@
+.registration-banner {
+  height: 100%;
+  background-image: url('../../../images/src/car-manager.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto;
+
+  @include desktop {
+    background-size: 60%;
+  }
+  @include tablets {
+    background-size: 60%;
+    background-position: center bottom;
+  }
+  @include bigPhones {
+    background-size: 80%;
+    background-position: center bottom;
+  }
+
+  &--footer {
+    background-image: url('../../../images/src/cars.png');
+    @include desktop{
+      background-size: 60%;
+    }
+
+    @include tablets {
+      background-image: unset;
+      
+    }
+
+    @include bigPhones{
+      background-image: unset;
+    }
+
+    @include phones{
+      background-image: unset;
+    }
+  }
+  // .registration-banner__block
+
+  &__block {
+    width: 42%;
+    max-width: 530px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    @include tablets {
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      max-width: unset;
+    }
+    @include bigPhones {
+      align-items: center;
+      justify-content: flex-start;
+      width: 100%;
+      max-width: unset;
+    }
+
+    &--footer{
+      max-width: 650px;
+      padding-top: 70px;
+      padding-bottom: 70px;
+      padding-left: 70px;
+      width: 60%;
+
+      @include desktop{
+        padding: 40px;
+      }
+
+      @include tablets {
+        padding: 40px;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: unset;
+      }
+      @include bigPhones {
+        padding: 40px;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        max-width: unset;
+      }
+    }
+  }
+
+  // .registration-banner__title
+
+  &__title {
+    text-align: left;
+    margin-bottom: 30px;
+
+    @include tablets {
+      text-align: center;
+    }
+
+    @include bigPhones{
+      text-align: center;
+    }
+
+    @include phones{
+      text-align: center;
+    }
+    
+    &--footer {
+      margin-bottom: 0;
+    }
+  }
+
+  // .registration-banner__text
+
+  &__text {
+    text-align: left;
+
+    @include desktop{
+      
+    }
+
+    @include tablets {
+      text-align: center;
+    }
+
+    @include bigPhones{
+      text-align: center;
+    }
+
+    @include phones{
+      text-align: center;
+    }
+
+    &--footer {
+      display: none;
+    }
+  }
+
+  // .registration-banner__btn
+
+  &__btn {
+    margin-top: 60px;
+
+    @include desktop{
+      margin-top: 30px;
+    }
+    @include tablets{
+      margin-top: 30px;
+    }
+    @include bigPhones{
+      margin-top: 30px;
+    }
+  }
+}

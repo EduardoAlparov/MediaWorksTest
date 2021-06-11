@@ -1,0 +1,32 @@
+.login {
+
+  // .login__link
+
+  &__link {
+    display: block;
+    position: relative;
+    color: $white-color;
+    padding-left: 36px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 325;
+    line-height: 23px;
+
+    &:hover{
+      color: $button-color;
+      &::before{
+        background: url('/images/src/login_icon-orange.svg');
+      }
+    }
+    
+    &::before {
+      content: '';
+      background: url('/images/src/login_icon.svg');
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}

@@ -1,11 +1,20 @@
 // USER VARIABLES SECTION
 
-$accent: orange // Accent Color
+$accent: orange //
+$button-color: #F25B24 // Button Color
 $fontsize: 16px // Body Font Size
-$textcolor: #333 // Text Color
+$white-color: #fff // White Text Color
+$textcolor: #2E2D35 // Text Color
+$textcolor2: #474351// Secondary Text Color
 $lineheight: 1.65 // Document Line Height
 $userfont: roboto-oh5, sans-serif // User Font Family
 $systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+// Breakpoints //
+$bp-desktop-hd: 1800px
+$bp-desktop: 1200px
+$bp-tablets: 768px
+$bp-phones: 480px
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 30px
@@ -27,10 +36,12 @@ $gutter: $grid-gutter-width
 		font-weight: $fweight
 		src: url($furl) format('woff2')
 
-@include font('roboto-oh5', normal, 400, '../fonts/roboto-regular-webfont.woff2')
-@include font('roboto-oh5', italic, 400, '../fonts/roboto-italic-webfont.woff2')
-@include font('roboto-oh5', normal, 700, '../fonts/roboto-bold-webfont.woff2')
-@include font('roboto-oh5', italic, 700, '../fonts/roboto-bolditalic-webfont.woff2')
+@include font('Whitney', normal, 400, '../fonts/Whitney-Medium.woff2')
+@include font('Whitney', italic, 400, '../fonts/Whitney-LightItalic.woff2')
+@include font('Whitney', bold, 700, '../fonts/Whitney-Bold.woff2')
+@include font('SegoeUI', normal, 400, '../fonts/SegoeUI.woff2')
+@include font('SegoeUI', italic, 400, '../fonts/SegoeUI-Italic.woff2')
+@include font('SegoeUI', bold, 700, '../fonts/SegoeUI-Bold.woff2')
 
 // GENERAL DOCUMENT STYLES
 

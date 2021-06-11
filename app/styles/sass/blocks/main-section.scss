@@ -1,0 +1,59 @@
+.main-section {
+  min-height: 100vh;
+  padding-top: 130px;
+  padding-bottom: 130px;
+
+  // .main-section__container
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  // .main-section__title
+  &__title {
+    flex: 2 0 0;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 50px;
+
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 52px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    @include desktop{
+      
+    }
+
+    @include tablets {
+      text-align: center;
+      line-height: 32px;
+      font-size: 36px;
+    }
+
+    @include bigPhones{
+      text-align: center;
+      line-height: 32px;
+      font-size: 32px;
+    }
+
+    @include phones{
+      text-align: center;
+      line-height: 32px;
+      font-size: 28px;
+    }
+  }
+
+  // .main-section__advanteges
+  &__advanteges {
+    flex: 2 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,119 @@
+.advanteges {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+
+  @include desktop{
+
+  }
+
+  @include tablets {
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 100%;
+    grid-row: 20px;
+    grid-column: unset;
+  }
+
+  @include bigPhones{
+    grid-template-columns: 100%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-row: 20px;
+    grid-column: unset;
+  }
+
+  @include phones{
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-columns: 100%;
+    grid-row: 20px;
+    grid-column: unset;
+  }
+
+  // .advanteges__item
+  &__item {
+    height: 100%;
+    background-image: url('../../../images/src/time.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto;
+    background-color: #F6F5F9;
+    border-radius: 6px;
+
+    &--speed{
+      background-image: url('../../../images/src/speed.png');
+    }
+    &--information{
+      background-image: url('../../../images/src/information.png');
+    }
+    &--chat{
+      background-image: url('../../../images/src/chat.png');
+    }
+  }
+
+  // .advanteges__info-block
+
+  &__info-block {
+    width: 50%;
+    padding-top: 40px;
+    padding-left: 43px;
+    padding-bottom: 50px;
+  }
+
+  // .advanteges__title
+
+  &__title {
+    font-family: 'SegoeUI', sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 22px;
+
+    @include desktop{
+    }
+
+    @include tablets {
+      font-size: 20px;
+    }
+
+    @include bigPhones{
+      font-size: 18px;
+    }
+
+    @include phones{
+      font-size: 18px;
+    }
+  }
+
+  // .advanteges__text
+
+  &__text {
+    font-family: 'SegoeUI', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: $textcolor2;
+
+    @include desktop{
+    }
+
+    @include tablets {
+      font-size: 14px;
+    }
+
+    @include bigPhones{
+      font-size: 14px;
+    }
+
+    @include phones{
+      font-size: 14px;
+    }
+  }
+}

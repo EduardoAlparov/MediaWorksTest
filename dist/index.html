@@ -7,27 +7,173 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>OptimizedHTML 5</title>
+	<title>TEST</title>
 	<meta name="description" content="Startup HTML template OptimizedHTML 5">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
 	<link rel="icon" href="images/favicon.png">
 	<meta property="og:image" content="images/dist/preview.jpg">
-	
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="css/main.min.css">
 
 </head>
 
 <body>
 
-	<div style="max-width: 700px; margin: auto">
+<div class="page-wrapper">
 
-		<img src="images/dist/preview.jpg" alt="Start HTML5 Template" style="width: 100%"><br><br>
-		<h2>Welcome to startup HTML template OptimizedHTML 5!</h2>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui, pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis voluptatem. Sed.</p>
-	
+	<!-- header -->
+	<header class="header-section"> 
+
+		<div class="container header-section__container">
+
+			<div class="header-section__header">
+				<div class="header">
+					<div class="header__logo">
+						<div class="logo">
+							<img src="./images/src/logo.png" alt="логотип">
+						</div>
+					</div>
+					<div class="header__menu">
+						<div class="menu">
+							<div class="menu__item">
+								<a href="#" class="menu__link">Клиентам</a>
+							</div>
+						</div>
+					</div>
+					<div class="header__login">
+						<div class="login">
+							<a id="buttonLogin" href="#modal" class="login__link">Войти</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="header-section__registration-banner">
+				<div class="registration-banner">
+					<div class="registration-banner__block">
+						<div class="registration-banner__title title">
+							<p>Подбор авто в лизинг по выгодной цене</p>
+						</div>
+						<div class="registration-banner__text text">
+							<p>IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
+						</div>
+						<div class="registration-banner__btn">
+							<button class="button-registration">Регистрация</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</header>
+	<!-- header -->
+
+	<!-- main-section -->
+	<main class="main-section">
+		<div class="container main-section__container">
+			<div class="main-section__title">
+				<h1>Меньше условий – больше возможностей</h1>
+			</div>
+			<div class="main-section__advanteges">
+				<ul class="advanteges">
+					<li class="advanteges__item">
+						<div class="advanteges__info-block">
+							<div class="advanteges__title">
+								<h3>Экономия времени</h3>
+							</div>
+							<div class="advanteges__text">
+								<p>Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
+							</div>
+						</div>
+					</li>
+					<li class="advanteges__item advanteges__item--speed">
+						<div class="advanteges__info-block">
+							<div class="advanteges__title">
+								<h3>Никаких задержек</h3>
+							</div>
+							<div class="advanteges__text">
+								<p>Вы получаете запросы сразу же после отправки клиентом.</p>
+							</div>
+						</div>
+					</li>
+					<li class="advanteges__item advanteges__item--information">
+						<div class="advanteges__info-block">
+							<div class="advanteges__title">
+								<h3>Максимальная информативность</h3>
+							</div>
+							<div class="advanteges__text">
+								<p>В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</p>
+							</div>
+						</div>
+					</li>
+					<li class="advanteges__item advanteges__item--chat">
+						<div class="advanteges__info-block">
+							<div class="advanteges__title">
+								<h3>Удобство общения</h3>
+							</div>
+							<div class="advanteges__text">
+								<p>Для каждого запроса у вас открыт чат с клиентом с возможностью отправки документов.</p>
+							</div>
+						</div>
+					</li>
+				
+				</ul>
+			</div>
+		</div>
+	</main>
+	<!-- main-section -->
+
+	<!-- footer-section  -->
+	<footer class="footer-section">
+		<div class="container footer-section__container">
+			<div class="footer-section__registration-banner">
+				<div class="registration-banner registration-banner--footer">
+					<div class="registration-banner__block registration-banner__block--footer">
+						<div class="registration-banner__title registration-banner__title--footer title--footer title">
+							<p>Регистрируйся и получай актуальные запросы на автомобили от заинтерисованных клиентов</p>
+						</div>
+						<div class="registration-banner__text registration-banner__text--footer text">
+							<p>IT платформа по быстрому поиску автомобиля от официальных дилеров РФ</p>
+						</div>
+						<div class="registration-banner__btn">
+							<button class="button-registration">Регистрация</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- footer-section  -->
+</div>
+
+<div class="modal" id="modal">
+	<div class="modal__container">
+		<div class="modal__title">
+			<h1>Авторизация</h1>
+		</div>
+		<div class="modal__form">
+			<label for="" class="form__label">
+				<div class="form__name">E-mail</div>
+				<input type="text" class="form__input" placeholder="Введите e-mail">
+			</label>
+		</div>
+		<div class="modal__form">
+			<label for="" class="form__label">
+				<div class="form__name">Пароль</div>
+				<input type="text" class="form__input" placeholder="Введите пароль">
+			</label>
+		</div>
+		<div class="modal__button">
+			<button class="button-registration button-registration--registration">Войти</button>
+		</div>
+		<div class="modal__close">
+			<a id="close" class="modal__icon"></a>
+		</div>
 	</div>
+</div>
 
 	<script src="js/app.min.js"></script>
 

@@ -1,0 +1,31 @@
+.form {
+
+  // .form__label
+  &__label {
+    width: 100%;
+
+  }
+
+  // .form__name
+  &__name {
+    color: $textcolor2;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 350;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  // .form__input
+  &__input {
+    width: 100%;
+    font-weight: 325;
+    padding: 17px;
+    padding-left: 12px;
+    border: 1px solid #DDDAE7;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+}
